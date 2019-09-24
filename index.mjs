@@ -52,10 +52,10 @@ const main = async () => {
     html: '<p>Your html here</p>' // plain text body
   };
 
-  transporter.sendMail(mailOptions, (err, info) => {
-    if (err) console.log(err);
-    else console.log(info);
-  });
+  // transporter.sendMail(mailOptions, (err, info) => {
+  //   if (err) console.log(err);
+  //   else console.log(info);
+  // });
 };
 
 main();
