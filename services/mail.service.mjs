@@ -8,7 +8,7 @@ import nodemailer from 'nodemailer';
  */
 const main = async (req, res, emailObj) => {
   const transportOptions = {
-    service: 'gmail',
+    service: process.env.EMAIL_SERVICE,
     // Approach 1 => using google console dashboard brojects
     // - create project and add
     // - Library Gmail Api
