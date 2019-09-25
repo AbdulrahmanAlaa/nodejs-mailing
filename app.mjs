@@ -1,7 +1,12 @@
+'use strict';
 // NPM 3rd Party Modules
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+// Load environment variables
+dotenv.config();
 
 // App Modules
 import appRoutes from './routes/index.mjs';

@@ -1,8 +1,6 @@
-const send = (request, response, next) => {
-  response.send('success');
-  console.log(request.body);
-
+import emailService from '../services/mail.service.mjs';
+const send = (request, response) => {
+  emailService(request, response, request.body);
 };
 
 export default { send };
-  
