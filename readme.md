@@ -8,4 +8,7 @@
 * using Environment Variables
 * using Restful services approach with MVC in the NodeJS
 * using express to host the APIs
-* using joi for parameters validation
+* using `express-validator` for parameters validation 
+
+> *Example and demo with cleaner TypeScript version can be found on the following branch*
+`feature/hosting-on-firebase` 
