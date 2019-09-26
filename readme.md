@@ -22,21 +22,9 @@
 *Body Part*
 
 ```
-{ 
-    "accepted": [
-        "gmorgan@talabat.com"
-    ],
-    "rejected": [],
-    "envelopeTime": 199,
-    "messageTime": 657,
-    "messageSize": 256,
-    "response": "250 2.0.0 OK  1569493972 w16sm448155ilc.62 - gsmtp",
-    "envelope": {
-        "from": "boody.vc@gmail.com",
-        "to": [
-            "gmorgan@talabat.com"
-        ]
-    },
-    "messageId": "<8d24223e-cb03-259f-bbe6-9cd6253ba19c@gmail.com>"
+{
+	"subject":"",
+	"body":"<h1>Hello world</h1>",
+	"to":["gmorgan@talabat.com"]
 }
 ```
