@@ -1,10 +1,8 @@
-import express from 'express';
+import * as express from 'express';
 
-import email from '../controllers/email.controller.mjs';
-import emailValidation from './validation/email.mjs';
-import validationErrorHandler from './validation/index.mjs';
-
-
+import email from '../controllers/email.controller';
+import emailValidation from './validation/email';
+import validationErrorHandler from './validation';
 
 const router = express.Router();
 

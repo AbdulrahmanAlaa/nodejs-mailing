@@ -1,6 +1,6 @@
 // Registering All Application Routes
-import express from 'express';
-import email from './email.mjs';
+import * as express from 'express';
+import email from './email';
 
 const router = express.Router();
 

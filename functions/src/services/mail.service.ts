@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+import * as nodemailer from 'nodemailer';
 
 // Enable gmail api in google console
 // https://myaccount.google.com/u/1/apppasswords
@@ -6,8 +6,8 @@ import nodemailer from 'nodemailer';
 /**
  * Bootstrap Application
  */
-const main = async (req, res, emailObj) => {
-  const transportOptions = {
+const main = async (req: any, res: any, emailObj: any) => {
+  const transportOptions:any = {
     service: process.env.EMAIL_SERVICE,
     // Approach 1 => using google console dashboard brojects
     // - create project and add
@@ -50,7 +50,7 @@ const main = async (req, res, emailObj) => {
     html: emailObj.body // plain text body
   };
 
-  transporter.sendMail(mailOptions, (err, info) => {
+  transporter.sendMail(mailOptions, (err: any, info: any) => {
     if (err) res.send(err);
     else res.send(info);
   });
